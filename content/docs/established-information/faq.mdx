@@ -22,15 +22,15 @@ Both are pretty fast in modern times, games can run fine on both (but generally 
 QUIC is a **hybrid protocol** that builds off UDP to get the same speed benefits, but adds some layers of reliability like TCP.
 Essentially, a solid choice for game development that blends speed and reliability.
 
-## 3. What are Transport Packets?
+## 3. What are Transfer Packets?
 
-Hytale will support transfer packets which can send players to other servers with a small payload for tokens/encrypted data.
+Transfer packets in Hytale are small data payloads *(4kb)* that allow players to move from one server to another while carrying information.
+They are not equivalent to something like BungeeCord or Velocity and are primarily intended for smaller servers. 
 
-- Equivalent of BungeeCord in Minecraft
-- Mainly for large server networks
+Unlike BungeeCord, they do not manage network-wide features such as global plugins. 
+Implementing DDOS protection would also be incredibly hard for smaller networks by using transfer packets.
 
-There is no middleman, you connect directly to Server A. When you want to switch, Server A says “Here is a 4kb ticket w/inventory and stats. Go to server B”
-Leads to massive cost reduction which can be spent on devs instead of servers
+Transfer packets work quite well in scenarios such as small server networks or hubs where players will hop between servers without the loss of progress. For example, a player might finish a dungeon on one server and then move to a lobby or different game mode with their inventory and stats intact. This lessens server costs and enables the developers to put more effort into gameplay improvement rather than complicated network setups.
 
 ## 4. Will Hytale support dedicated servers?
 
