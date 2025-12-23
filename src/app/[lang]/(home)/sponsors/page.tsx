@@ -16,9 +16,9 @@ const featuredSponsors = [
 
 const sponsors = [
   {
-    name: 'Template until we have a sponsor',
-    logo: '/branding/logo-light-348.png',
-    url: 'https://hytalemodding.guide',
+    name: 'ApexHosting',
+    logo: '/sponsors/apexhosting.png',
+    url: 'https://apexminecrafthosting.com',
   },
 ];
 
