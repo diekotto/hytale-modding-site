@@ -240,5 +240,6 @@ Contributors are recognized in several ways:
 If you have questions not covered in this guide:
 - Ask in the [Discord server](https://discord.gg/hytalemodding)
 - Reach out to us via email at `hello@hytalemodding.dev`
+- [Open a discussion](https://github.com/orgs/HytaleModding/discussions) on GitHub
 
 Thank you for contributing to Hytale Modding Documentation! Your efforts help the entire community learn and grow together.
