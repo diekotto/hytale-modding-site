@@ -112,8 +112,7 @@ export async function generateMetadata(
     keywords: [...parentKeywords, ...pageKeywords],
   };
 
-  if (ogLanguageBlacklist.includes(params.lang))
-    return baseMetadata;
+  if (ogLanguageBlacklist.includes(params.lang)) return baseMetadata;
   else
     return {
       ...baseMetadata,

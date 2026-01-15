@@ -66,7 +66,7 @@ export async function generateMetadata(
 
   const headersList = await headers();
   const pathname = headersList.get("x-pathname") || `/${lang}`;
-  
+
   // Remove the language prefix from pathname to get the page path
   const pagePath = pathname.replace(`/${lang}`, "");
 
